@@ -141,3 +141,59 @@ button:hover {
 }
 button:focus { outline: 2px solid #ff9eb5; }
 
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+  
+  /* ลดระยะห่างเมนู และปรับขนาดตัวอักษร */
+  .menu {
+    gap: 12px;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .menu-item {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  /* ปรับ layout ของ content ให้ซ้อนกัน */
+  .content {
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+  }
+
+  /* ปรับขนาด photo card ให้เต็มหน้าจอมือถือ */
+  .photo-card {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .photo-card img {
+    border-radius: 8px;
+  }
+
+  /* ปรับ contact box ให้เต็มความกว้างและมี margin */
+  .contact-box {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact-box h2 {
+    font-size: 22px;
+    padding: 8px 20px;
+  }
+
+  /* ปรับไอคอน social ให้เล็กลง */
+  .social i {
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  /* ปรับปุ่มให้เต็มหน้าจอมือถือ */
+  button {
+    width: 90%;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+}
