@@ -25,11 +25,11 @@ body {
 
 /* ================= CARD ================= */
 .card {
-  background: #fccddb;
+  background: #ffe4ec;
   border-radius: 18px;
-  padding: clamp(25px, 3vw, 50px);  /* เพิ่มขนาดบนจอใหญ่ */
+  padding: clamp(20px, 2vw, 35px);
   text-align: center;
-  width: clamp(140px, 18%, 220px);   /* กว้างมากขึ้นบน Desktop */
+  width: clamp(120px, 18%, 220px); /* ขนาดใหญ่บน Desktop */
   cursor: pointer;
   box-shadow: 0 6px 14px rgba(255, 105, 180, 0.25);
   transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.3s, color 0.3s;
@@ -46,7 +46,7 @@ body {
 }
 
 .card i {
-  font-size: clamp(28px, 3vw, 48px); /* ไอคอนใหญ่ขึ้น */
+  font-size: clamp(28px, 3vw, 48px);
   color: #b33a6c;
   margin-bottom: 12px;
   transition: color 0.3s;
@@ -58,7 +58,7 @@ body {
 
 .card p {
   margin: 0;
-  font-size: clamp(16px, 2vw, 24px); /* ตัวอักษรใหญ่ขึ้น */
+  font-size: clamp(16px, 2vw, 24px);
   font-weight: 600;
   color: inherit;
 }
@@ -76,6 +76,7 @@ body {
     font-size: clamp(14px, 1.8vw, 20px);
   }
 }
+
 @media (max-width: 600px) { /* มือถือ */
   .menu {
     flex-direction: column; /* เรียงแนวตั้ง */
@@ -84,8 +85,7 @@ body {
   }
 
   .card {
-    /* ความกว้างเดิม (ไม่เปลี่ยน) */
-    width: clamp(120px, 45%, 180px);
+    width: clamp(120px, 45%, 180px); /* ความกว้างเดิม */
     padding: clamp(15px, 3vw, 25px);
   }
 
