@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: "Poppins", "Mitr", sans-serif;
-  background: linear-gradient(135deg, #fdeecb 0%, #ffe4ec 100%);
+  background: #fdf6e3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@ body {
 
 /* ================= CARD ================= */
 .card {
-  background: #ffe4ec;
+  background: #fccddb;
   border-radius: 18px;
   padding: clamp(25px, 3vw, 50px);  /* เพิ่มขนาดบนจอใหญ่ */
   text-align: center;
@@ -76,15 +76,23 @@ body {
     font-size: clamp(14px, 1.8vw, 20px);
   }
 }
-
 @media (max-width: 600px) { /* มือถือ */
+  .menu {
+    flex-direction: column; /* เรียงแนวตั้ง */
+    align-items: center;    /* จัดกึ่งกลางแนวนอน */
+    gap: 16px;              /* เว้นระยะระหว่างปุ่ม */
+  }
+
   .card {
-    width: 45%;
+    /* ความกว้างเดิม (ไม่เปลี่ยน) */
+    width: clamp(120px, 45%, 180px);
     padding: clamp(15px, 3vw, 25px);
   }
+
   .card i {
     font-size: clamp(20px, 6vw, 28px);
   }
+
   .card p {
     font-size: clamp(12px, 4vw, 16px);
   }
